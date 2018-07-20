@@ -1,31 +1,19 @@
 {
-  "name": "garage-node-api",
+  "name": "project",
   "version": "1.0.0",
-  "description": "API Node.JS - Express",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bmdefreitas/garage-node-api.git"
-  },
-  "keywords": [
-    "Node.JS"
-  ],
-  "author": "Bruno Freitas",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bmdefreitas/garage-node-api/issues"
-  },
-  "homepage": "https://github.com/bmdefreitas/garage-node-api#readme",
   "dependencies": {
-    "express": "^4.16.3",
-    "typescript": "^2.9.1"
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "webpack": "^4.12.0"
+    "cors": "^2.8.4"
   }
 }
