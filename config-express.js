@@ -1,10 +1,13 @@
 const express = require('express')
 , app = express()
 , cors = require('cors');
+const path = require('path');
 
 app.use(cors());
 
 app.use(express.static('public'));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.use((err, req, res, next) => {
     console.log('Server error. Cause:');
@@ -12,6 +15,7 @@ app.use((err, req, res, next) => {
     res.status(500).json({ message: 'internal server error' });
 });
 
+require('./views/routes/root')(app);
 require('./api/routes/nota')(app);
 
 app.use('*', (req, res) => {
